@@ -6,42 +6,42 @@
 
 **2팀 구성원 : 이지훈(팀장), 문주현, 홍훈표**
 
-"""
-\├── manage.py\n
+│   ├── \_\_init\_\_.py
+
+│   ├── \_\_pycache\_\_
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── media
+│   └── video
+├── persistence
+│   ├── db
+│   └── models
+├── pushup
+│   ├── \_\_init\_\_.py
+│   ├── \_\_pycache__
+│   ├── admin.py
+│   ├── apps.py
+│   ├── data
+│   ├── db.sqlite3
+│   ├── migrations
+│   ├── models.py
+│   ├── psu_models
+│   ├── templates
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── run
+│   └── gunicorn.sock
+└── static
+│   ├──  admin
+│   ├── assets
+│   ├── css
+│   ├── js
+
+├── manage.py
 ├── db.sqlite3
 ├── django.crt
 ├── django.key
 ├── fitness
-│   ├── __init__.py
-│   ├── __pycache__
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── media
-│   └── video
-├── persistence
-│   ├── db
-│   └── models
-├── pushup
-│   ├── __init__.py
-│   ├── __pycache__
-│   ├── admin.py
-│   ├── apps.py
-│   ├── data
-│   ├── db.sqlite3
-│   ├── migrations
-│   ├── models.py
-│   ├── psu_models
-│   ├── templates
-│   ├── tests.py
-│   ├── urls.py
-│   └── views.py
-├── run
-│   └── gunicorn.sock
-└── static
-    ├── admin
-    ├── assets
-    ├── css
-    └── js
-"""
