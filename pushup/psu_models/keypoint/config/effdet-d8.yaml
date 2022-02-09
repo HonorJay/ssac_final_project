@@ -1,0 +1,65 @@
+seed: 20220122
+result_dir: 
+comment: null
+
+det_model: 
+  name: efficientdet-d8
+
+dataset:
+  dir: /home/ubuntu/fitness_django/inf_src/pushup/psu_models/keypoint/data
+  batch_size: 1
+  num_cpus: 4
+  padding: 20
+  group_kfold: false
+  
+  crop:
+    - 1 # 192
+    - 1 # 28
+    - 1919 # 1728
+    - 1079 # 1052
+
+  input_width: 1920 # 768 # 1536
+  input_height: 1080 # 512 # 1024
+  
+train:
+  SAM: true # false
+  earlystop_patience: 10
+  start_epoch: 1
+  final_epoch: 10 # 200
+  
+  batch_augmentation: true
+  
+  folds:
+    - 1
+    # - 2
+    # - 3
+    # - 4
+    # - 5
+  checkpoints:
+    - null
+    # - null
+    # - null
+    # - null
+    # - null
+
+  # lr: 0.000001
+  lr: 0.0001
+  scheduler:
+    # type: CosineAnnealingWarmUpRestarts
+    # params:
+    #   T_0: 10
+    #   T_mult: 1
+    #   eta_max: 0.001
+    #   T_up: 5
+    #   gamma: 0.5
+    # type: CosineAnnealingWarmRestarts
+    # params:
+    #   T_0: 10
+    #   T_mult: 1
+    #   eta_min: 0.00001
+    #   verbose: false
+    type: ReduceLROnPlateau
+    params:
+      factor: 0.5
+      patience: 3
+      verbose: true
