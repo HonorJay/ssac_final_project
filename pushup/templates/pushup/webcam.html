@@ -1,0 +1,320 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Exercise Test1 </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js'></script>
+        <style>
+            .filebox label { 
+                    display: inline-block; 
+                    padding: .5em .75em; 
+                    color: #999; 
+                    font-size: 
+                    inherit; 
+                    line-height: 
+                    normal; 
+                    vertical-align: middle; 
+                    background-color: #fdfdfd; 
+                    cursor: pointer; 
+                    border: 1px solid #ebebeb; 
+                    border-bottom-color: #e2e2e2; 
+                    border-radius: .25em; } 
+                .filebox input[type="file"] { /* 파일 필드 숨기기 */ 
+                    position: absolute; 
+                    width: 1px; height: 1px; 
+                    padding: 0; margin: -1px; 
+                    overflow: hidden; 
+                    clip:rect(0,0,0,0); 
+                    border: 0; }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">PlayData Team2</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="{% url 'category' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'sports' %}">PREV PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        {% comment %} <img src = "{% url 'video_feed' %}"> <!-- webcam api 변경할 부분 --> {% endcomment %}
+                        <video id="video-output"></video> <!--moon-->
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <button class="btn btn-primary btn-xl" id="start-btn">Record</button>
+                        <button class="btn btn-primary btn-xl" id="finish-btn">Pause</button> <!-- pause 누르면 record section로 내려감 -->
+                    </div>
+                </div>
+                <!-- upload 부분-->
+                <section class="page-section" id="record">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        {% comment %} <img src = "{% url 'video_feed' %}"> <!-- webcam api 변경할 부분 --> {% endcomment %}
+                        <video id="recorded-video" controls></video> <!--moon-->
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <button class="btn btn-primary btn-xl" id="submit-btn">Send</button>
+                    </div>
+                </div>
+                </section>
+                <!-- upload 부분-->
+                <section class="page-section bg-primary" id="upload">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <h2 class="text-white mt-0">Please upload your video file!</h2>
+                                <hr class="divider divider-light" />
+                                <p class="text-white-75 mb-4">응시생 여러분들의 스마트폰이나 카메라로 직접 촬영한 것을 업로드해주세요</p>
+                                <p class="text-white-75 mb-4">즉시 합격 여부 확인이 가능합니다!</p>
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" size=20/>
+                                    <label for="name">name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div><input type="file" id="ex_file" accept=".mp4, .m4v, .avi, .wmv, .mwa, .asf, .mpg, .mpeg, .mov, .webm">
+                                <div class="filebox"> 
+                                    <hr class="divider divider-light" />
+                                </div>
+                                <button class="btn btn-light btn-xl" id="file-submit-btn">File Send</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--moon-->
+            <script>
+                const videoOutput = document.getElementById("video-output");
+                const constraints = {audio: false, video: {width:640,heigth:640}};
+                const startBtn = document.getElementById("start-btn");
+                const finishBtn = document.getElementById("finish-btn");
+                const submitBtn = document.getElementById("submit-btn");
+                const recordedVideo = document.getElementById("recorded-video");
+                const FilesubmitBtn = document.getElementById("file-submit-btn");
+                
+                let mediaStream = null;
+                let mediaRecorder = null;
+                let recordedMediaUrl = null;
+                let VideoData = null;
+                let pushupTimer = null;
+                
+                function getCurrentDate()
+                {
+                    var date = new Date();
+                    var year = date.getFullYear().toString();
+        
+                    var month = date.getMonth() + 1;
+                    month = month < 10 ? '0' + month.toString() : month.toString();
+        
+                    var day = date.getDate();
+                    day = day < 10 ? '0' + day.toString() : day.toString();
+        
+                    var hour = date.getHours();
+                    hour = hour < 10 ? '0' + hour.toString() : hour.toString();
+        
+                    var minites = date.getMinutes();
+                    minites = minites < 10 ? '0' + minites.toString() : minites.toString();
+        
+                    var seconds = date.getSeconds();
+                    seconds = seconds < 10 ? '0' + seconds.toString() : seconds.toString();
+        
+                    return year +'-'+ month +'-'+ day +'_'+ hour +'-'+ minites +'-'+ seconds;
+                }
+                navigator.mediaDevices.getUserMedia(constraints)
+                .then(function(newMediaStream){
+                    mediaStream = newMediaStream;
+                    // MediaStream을 HTMLVideoElement의 srouce로 설정
+                    videoOutput.srcObject = mediaStream;
+                    // metadata가 로드될 때 실행되는 이벤트
+                    videoOutput.onloadedmetadata = function() {
+                    // HTMLVideoElement로 카메라의 화면을 출력하기 시작
+                        videoOutput.play();
+                    };
+                })
+        
+                // 녹화 시작 버튼 클릭 시 빌생하는 이벤트 핸들러 등록
+                startBtn.addEventListener("click", function(){
+                    alert('녹화가 시작됩니다.')
+                    console.log('녹화..')
+                    let mediaData = [];
+                    
+                    // 1.MediaStream을 매개변수로 MediaRecorder 생성자를 호출
+                    mediaRecorder = new MediaRecorder(mediaStream, {
+                        mimeType: "video/webm; codecs=vp9",
+                    });
+        
+                    // 2. 전달받는 데이터를 처리하는 이벤트 핸들러 등록
+                    mediaRecorder.ondataavailable = function(event){
+                        if(event.data && event.data.size > 0){
+                            console.log('ondataavailable');
+                            mediaData.push(event.data);
+                        }
+                    }
+                    
+                    // 3. 녹화 중지 이벤트 핸들러 등록
+                    mediaRecorder.onstop = function(){
+                        if (recordedMediaUrl) {
+                            URL.revokeObjectURL(recordedMediaUrl);
+                        }
+                        const blob = new Blob(mediaData, {type: "video/webm;"});
+                        console.log('녹화 중지')
+                        recordedMediaUrl = URL.createObjectURL(blob);
+                        recordedVideo.src = recordedMediaUrl;
+                        VideoData = blob;
+                        clearTimeout(pushupTimer);
+                        console.log('타이머 중지')
+                    };
+                    
+                    // 4. 녹화 시작
+                    mediaRecorder.start();
+                    // 타이머 시작
+                    pushupTimer = setTimeout(function(){
+                        alert('60초 종료');
+                        console.log('60초 종료');
+                        mediaRecorder.stop();
+                    },60000)
+        
+                });
+        
+                // 녹화 종료 버튼 클릭 시 빌생하는 이벤트 핸들러 등록
+                finishBtn.addEventListener("click", function(){
+                    // 타이머 멈춤
+                    if(mediaRecorder){
+                        // 5. 녹화 중지
+                        mediaRecorder.stop();
+                        alert('녹화 종료');
+                    }
+                })
+        
+                submitBtn.addEventListener("click", function () {
+                    //alert('video send');
+                    if (confirm("정말 보내시겠습니까?")==true){
+                        // 서버로 보내기
+                        console.log(VideoData);
+                        console.log(document.location.origin+'/pushup/predict')
+                        const file = new File([VideoData], "test.avi");
+                        let now = getCurrentDate() 
+                        var userName = document.getElementById("name").value;
+                        console.log(userName);
+                        if (userName == ''){
+                            userName = 'unknown'
+                        };
+                        var fd = new FormData();
+                        fd.append("videoname", "test.avi");
+                        fd.append("upvideo", file);
+                        fd.append("now", now);
+                        fd.append("name", userName);
+                        //console.log(file);
+
+                        $.ajax({
+                            "method": "POST",
+                            "url": document.location.origin + '/pushup/predict',
+                            "data": fd,
+                            "dataType":"json",
+                            "processData":false,
+                            "contentType":false,
+                            "success": function(res) {
+                                // 응답처리 함수: 매개변수 res - 응답데이터
+                                alert('총', res.total,'개 중', res.pass,'개 성공');
+                                console.log(res.total);
+                            },
+                            "error":function(e){
+                                alert(e);
+                            }
+                        }).done(function(res){
+                            console.log(res.total);
+                            var result = res;
+                        }).fail(function(xhr, status, errorThrown){ alert(errorThrown)});
+                    }else{
+                        return false;
+                    }
+                    
+                });
+
+                FilesubmitBtn.addEventListener("click", function () {
+                    //alert('file send');
+                    if (confirm("정말 보내시겠습니까?")==true){
+                        // 파일업로드로 서버에 영상 보내기
+                        const file = document.getElementById("ex_file").files[0];
+                        let now = getCurrentDate() 
+                        var userName = document.getElementById("name").value;
+                        console.log(file);
+                        if (userName == ''){
+                            userName = 'unknown'
+                        };
+                        var fd = new FormData();
+                        fd.append("videoname", "test.avi");
+                        fd.append("upvideo", file);
+                        fd.append("now", now);
+                        fd.append("name", userName);
+                        //console.log(file);
+
+                        $.ajax({
+                            "method": "POST",
+                            "url": document.location.origin + '/pushup/predict',
+                            "data": fd,
+                            "dataType":"json",
+                            "processData":false,
+                            "contentType":false,
+                            "success": function(res) {
+                                // 응답처리 함수: 매개변수 res - 응답데이터
+                                if (res.hasOwnProperty("error")){
+                                    alert('error:'+ res.error);
+                                } else{
+                                    alert('총'+ res.total+'개 중'+ res.pass+'개 성공');
+                                    console.log(res.total);
+                                }                             
+                            },
+                            "error":function(e){
+                                alert(e);
+                            }
+                        }).done(function(res){
+                            console.log(res.total);
+                            var result = res;
+                        }).fail(function(xhr, status, errorThrown){ alert(errorThrown)});
+                    }else{
+                        return false;
+                    }
+                    
+                });
+            </script>
+        </header>
+        <!-- Footer-->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="{% static 'js/scripts.js'%}"></script>
+    </body>
+</html>
