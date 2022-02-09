@@ -6,6 +6,8 @@
 
 **team member : 이지훈(팀장), 문주현, 홍훈표**
 
+**Directory Structure** 
+
 ├── fitness
 
 │   ├── \_\_init\_\_.py
