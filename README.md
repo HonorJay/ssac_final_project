@@ -1,11 +1,11 @@
 # ssac_final_project
 
-# Sessac 2021 영상처리를 위한 인공지능SW개발자 양성 과정 _ 2팀 Final Project 
+**Sessac 2021 영상처리를 위한 인공지능SW개발자 양성 과정 _ 2팀 Final Project**
 
-# 팔굽혀펴기 바른 자세 및 개수 추정 
+**팔굽혀펴기 바른 자세 및 개수 추정** 
 
-# 2팀 구성원 : 이지훈(팀장), 문주현, 홍훈표
-
+**2팀 구성원 : 이지훈(팀장), 문주현, 홍훈표**
+"""
 ├── manage.py
 ├── db.sqlite3
 ├── django.crt
@@ -43,3 +43,4 @@
     ├── assets
     ├── css
     └── js
+"""
