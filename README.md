@@ -9,9 +9,10 @@
 **team member : 이지훈(팀장), 문주현, 홍훈표**
 
 
+
 ## Directory Structure
 
-├── fitness
+├── **fitness**
 
 │   ├── \_\_init\_\_.py
 
@@ -25,7 +26,7 @@
 
 │   └── wsgi.py
 
-├── media **\#웹캠 녹화 및 업로드시 영상이 저장되는 경로**
+├── media \#웹캠 녹화 및 업로드시 영상이 저장되는 경로 
 
 │   └── video
 
@@ -35,7 +36,7 @@
 
 │   └── models
 
-├── pushup
+├── **pushup**
 
 │   ├── \_\_init\_\_.py
 
@@ -45,7 +46,7 @@
 
 │   ├── apps.py
 
-│   ├── data **\#저장된 비디오 영상을 이미지(jpg)와 포즈(json)데이터로 나누어 저장하는 장소**
+│   ├── data \#저장된 비디오 영상을 이미지(jpg)와 포즈(json)데이터로 나누어 저장하는 장소
 
 │   ├── db.sqlite3
 
@@ -53,7 +54,15 @@
 
 │   ├── models.py
 
-│   ├── psu_models **\#키포인트 추출 및 운동 추정 모델**
+│   ├── **psu_models** \#키포인트 추출 및 운동 추정 모델
+
+│   │   ├── \_\_pycache\_\_
+
+│   │   ├── **count_pushup.py**
+
+│   │   ├── **exercise** \#운동자세파악  
+
+│   │   └── **keypoint** \# 키포인트 추출
 
 │   ├── templates
 
