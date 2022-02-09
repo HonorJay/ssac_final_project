@@ -2,11 +2,14 @@
 
 **Sessac 2021 영상처리를 위한 인공지능SW개발자 양성 과정 _ 2팀 Final Project**
 
+
 **Project title : 팔굽혀펴기 바른 자세 및 개수 추정** 
+
 
 **team member : 이지훈(팀장), 문주현, 홍훈표**
 
-**Directory Structure** 
+
+## Directory Structure
 
 ├── fitness
 
