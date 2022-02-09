@@ -6,8 +6,8 @@
 
 **2팀 구성원 : 이지훈(팀장), 문주현, 홍훈표**
 
-"""\
-├── manage.py
+"""
+\├── manage.py\n
 ├── db.sqlite3
 ├── django.crt
 ├── django.key
