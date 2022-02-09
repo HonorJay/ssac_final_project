@@ -1,0 +1,107 @@
+{
+    "\ub2c8\ud478\uc26c\uc5c5": {
+        "exercise_idx": 0,
+        "seq_idx": ["607", "623", "594", "593", "613", "598", "602", "609", "606", "610", "621", "622", "619", "601", "624", "620", "599", "612", "595", "604", "608", "600", "603", "597", "617", "616", "614", "618", "611", "615", "596", "605"],
+        "attr_name": ["\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc774\uc644\uc2dc \ud314\uafc8\uce58 90\ub3c4", "\uac00\uc2b4\uc758 \ucda9\ubd84\ud55c \uc774\ub3d9", "\uc190\uc758 \uc704\uce58 \uac00\uc2b4 \uc911\uc559 \uc5ec\ubd80", "\uace0\uac1c \uc816\ud798/\uc219\uc784 \uc5ec\ubd80"]
+    },
+    "\uc2a4\ud15d \ud3ec\uc6cc\ub4dc \ub2e4\uc774\ub098\ubbf9 \ub7f0\uc9c0": {
+        "exercise_idx": 1,
+        "seq_idx": ["082", "083", "084", "111", "112", "088", "102", "085", "094", "097", "092", "091", "110", "086", "100", "108", "107", "103", "093", "105", "099", "096", "081", "098", "109", "101", "106", "087", "089", "095", "104", "090"],
+        "attr_name": ["\uc55e\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ubab8\ud1b5 \ubc1c \ubb34\ub98e \ubc29\ud5a5 \uc77c\uce58\uc5ec\ubd80", "\ub4a4\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc0c1\uccb4\uc758 \uacfc\uc870\ud55c \uc219\uc784/\uc816\ud798 \uc5ec\ubd80"]
+    },
+    "\ud504\ub7f0\ud2b8 \ub808\uc774\uc988": {
+        "exercise_idx": 2,
+        "seq_idx": ["193", "194", "195", "199", "197", "196", "198", "200"],
+        "attr_name": ["\uc0c1\uccb4 \ub4a4\ub85c \uc219\uc774\uc9c0 \uc54a\uae30", "\ud314\uafc8\uce58 \uc0b4\uc9dd \uad6c\ubd80\ub9b0\ucc44 \uace0\uc815", "\uc190\ubaa9 \uc5b4\uae68 \ub610\ub294 \ud131\uc120\uae4c\uc9c0 \uc62c\ub9ac\uae30"]
+    },
+    "\uc5c5\ub77c\uc774\ud2b8\ub85c\uc6b0": {
+        "exercise_idx": 3,
+        "seq_idx": ["206", "202", "208", "205", "207", "201", "203", "204"],
+        "attr_name": ["\ud314\uafc8\uce58\uac00 \uc190\ubaa9 \ub9ac\ub4dc", "\uacac\uac11\uace8 \ud558\uac15 \uc720\uc9c0", "\ubc14\ubca8 \uc0c1\uccb4 \ubc00\ucc29"]
+    },
+    "\uc2a4\ud0e0\ub529 \ub2c8\uc5c5": {
+        "exercise_idx": 4,
+        "seq_idx": ["043", "044", "037", "039", "035", "041", "036", "048", "046", "040", "033", "047", "038", "042", "034", "045"],
+        "attr_name": ["\uc2dc\uc120 \uc815\uba74", "\ucc99\ucd94 \uc911\ub9bd", "\ubb34\ub98e \ucda9\ubd84\ud788 \uc62c\ub77c\uc624\uace0", "\uc774\uc644\uc2dc \ub2e4\ub9ac \uae34\uc7a5 \uc720\uc9c0"]
+    },
+    "\uc2a4\ud0e0\ub529 \uc0ac\uc774\ub4dc \ud06c\ub7f0\uce58": {
+        "exercise_idx": 5,
+        "seq_idx": ["014", "018", "025", "029", "026", "016", "008", "011", "028", "015", "010", "013", "031", "001", "022", "002", "017", "003", "021", "027", "024", "006", "004", "019", "007", "005", "012", "020", "009", "032", "023", "030"],
+        "attr_name": ["\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc2dc\uc120 \uc815\uba74 \uc720\uc9c0", "\uc218\ucd95\uc2dc \ubb34\ub98e\uacfc \ud314\uafc8\uce58\uac00 \ucda9\ubd84\ud788 \uac00\uae4c\uc6c0", "\ubb34\ub98e\uc774 \ubab8\ud1b5 \uce21\uba74\uc5d0\uc11c \uc62c\ub77c\uc624\ub294\uc9c0 \uc5ec\ubd80", "\uc591 \uc190\uc774 \uba38\ub9ac \ub4a4\uc5d0 \uc704\uce58"]
+    },
+    "\ud06c\ub85c\uc2a4 \ub7f0\uc9c0": {
+        "exercise_idx": 6,
+        "seq_idx": ["178", "182", "183", "180", "177", "184", "179", "181"],
+        "attr_name": ["\uc55e\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ubab8\ud1b5 \uc55e\ubc1c \uc55e\ubb34\ub98e \ubc29\ud5a5 \uc77c\uce58\uc5ec\ubd80", "\uc0c1\uccb4 \uc815\uba74 \uade0\ud615\uc7a1\uae30"]
+    },
+    "\uc2a4\ud15d \ubc31\uc6cc\ub4dc \ub2e4\uc774\ub098\ubbf9 \ub7f0\uc9c0": {
+        "exercise_idx": 7,
+        "seq_idx": ["121", "130", "131", "126", "125", "143", "135", "136", "115", "118", "134", "119", "133", "116", "122", "144", "141", "123", "117", "128", "127", "124", "113", "140", "114", "138", "137", "132", "120", "129", "139", "142"],
+        "attr_name": ["\uc55e\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ubab8\ud1b5 \ubc1c \ubb34\ub98e \ubc29\ud5a5 \uc77c\uce58\uc5ec\ubd80", "\ub4a4\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc0c1\uccb4\uc758 \uacfc\uc870\ud55c \uc219\uc784/\uc816\ud798 \uc5ec\ubd80"]
+    },
+    "\uc0ac\uc774\ub4dc \ub7f0\uc9c0": {
+        "exercise_idx": 8,
+        "seq_idx": ["145", "167", "148", "169", "157", "172", "166", "149", "164", "163", "158", "168", "175", "173", "165", "147", "146", "153", "152", "150", "151", "154", "159", "161", "156", "155", "160", "174", "171", "176", "162", "170"],
+        "attr_name": ["\uc55e\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ubab8\ud1b5 \ubc1c \ubb34\ub98e \ubc29\ud5a5 \uc77c\uce58\uc5ec\ubd80", "\ub4a4\ub2e4\ub9ac \ubb34\ub98e \uac01\ub3c4 90\ub3c4", "\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc0c1\uccb4\uc758 \uacfc\uc870\ud55c \uc219\uc784/\uc816\ud798 \uc5ec\ubd80"]
+    },
+    "\ubc14\ubca8 \ub85c\uc6b0": {
+        "exercise_idx": 9,
+        "seq_idx": ["230", "227", "236", "222", "231", "235", "240", "217", "238", "221", "234", "219", "220", "228", "232", "224", "237", "225", "226", "239", "223", "233", "218", "229"],
+        "attr_name": ["\ucc99\ucd94\uc758 \uc911\ub9bd", "\ubb34\ub98e \ubc18\ub3d9 \uc5c6\uc74c", "\uc0c1\uccb4 \ubc18\ub3d9 \uc5c6\uc74c", "\ubc14\ubca8 \uada4\uc801\uacfc \ubab8 \ubc00\ucc29", "\uc190\ubaa9\uc758 \uc911\ub9bd"]
+    },
+    "\ud478\uc2dc\uc5c5": {
+        "exercise_idx": 10,
+        "seq_idx": ["570", "582", "576", "589", "564", "580", "573", "590", "569", "566", "591", "581", "588", "592", "574", "572", "577", "567", "575", "568", "578", "586", "585", "583", "587", "584", "579", "562", "561", "571", "565", "563"],
+        "attr_name": ["\ucc99\ucd94\uc758 \uc911\ub9bd", "\uc774\uc644\uc2dc \ud314\uafc8\uce58 90\ub3c4", "\uac00\uc2b4\uc758 \ucda9\ubd84\ud55c \uc774\ub3d9", "\uc190\uc758 \uc704\uce58 \uac00\uc2b4 \uc911\uc559 \uc5ec\ubd80", "\uace0\uac1c \uc816\ud798/\uc219\uc784 \uc5ec\ubd80"]
+    },
+    "\ubc84\ud53c \ud14c\uc2a4\ud2b8": {
+        "exercise_idx": 11,
+        "seq_idx": ["066", "068", "053", "077", "059", "071", "060", "058", "076", "056", "070", "080", "051", "067", "065", "050", "061", "064", "069", "062", "074", "055", "078", "054", "072", "073", "052", "049", "075", "079", "057", "063"],
+        "attr_name": ["\ud314 \ud3b4\uace0 \uc5ce\ub4dc\ub838\uc744\ub54c \ud5c8\ub9ac \ud728 \uc5c6\uc74c", "\uc774\uc644\uc2dc \ud314\uafc8\uce58 90\ub3c4", "\uac00\uc2b4\uc758 \ucda9\ubd84\ud55c \uc774\ub3d9", "\uc190\uc758 \uc704\uce58 \uac00\uc2b4 \uc911\uc559 \uc5ec\ubd80", "\uace0\uac1c \uc816\ud798/\uc219\uc784 \uc5ec\ubd80"]
+    },
+    "\uc2dc\uc800\ud06c\ub85c\uc2a4": {
+        "exercise_idx": 12,
+        "seq_idx": ["541", "518", "538", "534", "517", "531", "536", "516", "526", "523", "522", "527", "542", "528", "544", "532", "540", "543", "521", "529", "533", "525", "515", "537", "520", "519", "514", "513", "539", "535", "530", "524"],
+        "attr_name": ["\ud5c8\ub9ac \uc9c0\uba74 \uace0\uc815", "\uc218\ucd95 \uc2dc \uc591\ubb34\ub98e \uad50\ucc28", "\uc2dc\uc120 \ubc30\uaf3d \uace0\uc815", "\ub2e4\ub9ac\uc640 \uc9c0\uba74 \uc0ac\uc774 \uc801\ub2f9\ud55c \uac70\ub9ac", "\ubb34\ub98e \ub108\ubb34 \uad7d\ud788\uc9c0 \uc54a\uc74c"]
+    },
+    "\ubc14\uc774\uc2dc\ud074 \ud06c\ub7f0\uce58": {
+        "exercise_idx": 13,
+        "seq_idx": ["512", "510", "505", "507", "511", "508", "506", "509"],
+        "attr_name": ["\ud5c8\ub9ac \uc9c0\uba74 \uace0\uc815", "\uc218\ucd95\uc2dc \ubb34\ub98e \uc5c9\ub369\uc774 \uc9c0\ub0a8 ", "\uacac\uac11\uace8\uc774 \uc9c0\uba74\uc73c\ub85c\ubd80\ud130 \ucda9\ubd84\ud788\uc62c\ub77c\uc634"]
+    },
+    "\ub77c\uc789 \ub808\uadf8 \ub808\uc774\uc988": {
+        "exercise_idx": 14,
+        "seq_idx": ["485", "478", "474", "481", "473", "477", "480", "486", "487", "475", "488", "479", "476", "484", "483", "482"],
+        "attr_name": ["\ud5c8\ub9ac \uc9c0\uba74 \uace0\uc815", "\ud5c8\ubc85\uc9c0\uc640 \uc885\uc544\ub9ac \uac01\ub3c4 \uace0\uc815", "\uc774\uc644 \uc2dc \ub2e4\ub9ac \uae34\uc7a5\uc720\uc9c0", "\uace0\uac1c \uc219\uc784 \uc5ec\ubd80"]
+    },
+    "\ud50c\ub7ad\ud06c": {
+        "exercise_idx": 15,
+        "seq_idx": ["558", "557", "560", "553", "559", "555", "556", "554"],
+        "attr_name": ["\ud314\uafc8\uce58\uac00 \uc5b4\uae68\ubcf4\ub2e4 \uc548\ucabd\uc5d0 \uc704\uce58\ud558\uc9c0 \uc54a\uc74c", "\ubab8\ud1b5\uacfc \uc5c9\ub369\uc774\uc758 \uc815\ub82c \uc720\uc9c0", "\uc0c1\uccb4\uc758 \uc9c0\uba74\uc73c\ub85c\ubd80\ud130 \ucda9\ubd84\ud55c \uac70\ub9ac \uc720\uc9c0"]
+    },
+    "\ud06c\ub7f0\uce58": {
+        "exercise_idx": 16,
+        "seq_idx": ["497", "493", "498", "502", "496", "503", "504", "494", "492", "491", "495", "489", "499", "501", "500", "490"],
+        "attr_name": ["\ud5c8\ub9ac \uc9c0\uba74 \uace0\uc815", "\uacac\uac11\uace8\uc774 \uc9c0\uba74\uc73c\ub85c\ubd80\ud130 \ucda9\ubd84\ud788 \uc62c\ub77c\uc634", "\uc5b4\uae68\ubc18\ub3d9 \uc5c6\uc74c", "\uc774\uc644\uc2dc \uae34\uc7a5 \uc720\uc9c0"]
+    },
+    "\ubc14\ubca8 \uc2a4\ud2f0\ud504 \ub370\ub4dc\ub9ac\ud504\ud2b8": {
+        "exercise_idx": 17,
+        "seq_idx": ["211", "215", "214", "209", "216", "210", "212", "213"],
+        "attr_name": ["\ubc14\ubca8 \uada4\uc801\uacfc \ubab8 \ubc00\ucc29", "\ubb34\ub98e \uad6c\ubd80\ub9b0\ucc44 \uace0\uc815", "\ucc99\ucd94\uc758 \uc911\ub9bd"]
+    },
+    "\ud799\uc4f0\ub7ec\uc2a4\ud2b8": {
+        "exercise_idx": 18,
+        "seq_idx": ["545", "552", "546", "550", "549", "548", "547", "551"],
+        "attr_name": ["\uc218\ucd95\uc2dc \ubb34\ub98e\ubd80\ud130 \uc5b4\uae68\uae4c\uc9c0 \uc77c\uc790", "\uc774\uc644 \uc2dc \uae34\uc7a5 \uc720\uc9c0", "\uace0\uac1c \ub4e4\uc9c0 \uc54a\uae30"]
+    },
+    "\uad7f\ubaa8\ub2dd": {
+        "exercise_idx": 19,
+        "seq_idx": ["186", "187", "188", "190", "192", "191", "189", "185"],
+        "attr_name": ["\ubb34\ub98e \uad6c\ubd80\ub9b0\ucc44 \uace0\uc815", "\uc2dc\uc120 \ubc29\ud5a5 \uc720\uc9c0", "\ucc99\ucd94\uc758 \uc911\ub9bd"]
+    },
+    "Y - Exercise": {
+        "exercise_idx": 20,
+        "seq_idx": ["626", "625", "630", "629", "628", "627", "632", "631"],
+        "attr_name": ["\uc591 \ud314 \ub192\uc774 \ub3d9\uc77c", "\uc5c4\uc9c0\uc190\uac00\ub77d \ud558\ub298\ubc29\ud5a5", "\uacbd\ucd94 \uc911\ub9bd \ub610\ub294 \ud6c4\uc778(retraction) \uc720\uc9c0"]
+    }
+}
